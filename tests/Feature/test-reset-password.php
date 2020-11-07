@@ -11,7 +11,7 @@ class WP_Test_Reset_Password extends EndpointTestCase
 
     public function test_reset_password()
     {
-        $user = UserFactory::make();
+        $user = (new UserFactory)->make();
         $payload = array( 'email' => $user['email'] );
 
         $this->call( 'POST' , $payload )
