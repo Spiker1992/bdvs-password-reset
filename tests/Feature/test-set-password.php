@@ -9,9 +9,6 @@ class WP_Test_Set_Password extends EndpointTestCase
 { 
     protected string $endPoint = '/bdpwr/v1/set-password'; 
 
-    /**
-     * @group current
-     */
     public function test_set_password()
     {
         $code = 'my_code';
